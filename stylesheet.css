@@ -44,6 +44,8 @@ header
     display: flex;
     margin: 90px 120px;
     gap: 15px;
+    
+    flex-wrap: wrap;
 }
 .splash-text
 {
@@ -91,10 +93,13 @@ header
     align-items: center;
     color: #1f2937;
 
+
 }
 .items
 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -114,8 +119,8 @@ header
 
 .item-image
 {
-width: 170px;
-height: 170px;
+    width: 170px;
+    height: 170px;
     border: #3882f6 solid 4px;
     border-radius: 10px;
 }
@@ -125,4 +130,86 @@ height: 170px;
     flex-wrap: wrap;
 }
 
+.quote
+{
+    flex: 1;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #e5e7eb;
+    color: #1f2937;
+    padding: 70px 330px;
+}
+.quote-description
+{
+    margin: 0;
+    font-size: 3.6em;
+    font-style: italic;
+    font-weight: 300;
+}
+.quote-person
+{
+    font-size: 2em;
+    font-weight: 900;
+    align-self: flex-end;
+    margin-right: 55px;
+}
+
+.disclaimer
+{
+    flex: 1;
+
+    background-color: #f9faf8;
+
+    padding: 80px 100px;
+}
+
+.disclaimer-area
+{
+    width: auto;
+    border-radius: 10px;
+
+    background-color: #3882f6;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px 120px;
+
+}
+
+.disclaimer-title
+{
+    margin: 0;
+    font-size: 2.8em;
+}
+.disclaimer-description
+{
+    margin: 0;
+    font-size: 2.2em;
+}
+.disclaimer-button
+{
+    background-color: #3882f6;
+
+    border: #f9faf8 solid 3px;
+    border-radius: 10px;
+    padding: 10px 35px;
+
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+footer
+{
+    margin: 0;
+    padding: 20px;
+
+    text-align: center;
+    font-size: 1.8em;
+}
